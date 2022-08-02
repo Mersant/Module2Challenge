@@ -1,0 +1,86 @@
+:root {
+    --dark-gray: #2F2F2F;
+    --gray-blue: #748688;
+    --light-blue: #88B2A0;
+}
+
+.davidLowry {
+    font-size: 250%;
+    text-shadow: 2px 2px var(--dark-gray);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+header {
+    background-color: var(--light-blue);
+    font-size: 150%;
+    text-shadow: 1px 1px var(--dark-gray);
+    padding: 50px;
+}
+
+header li {
+    float: right;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+/* This is the "Genuis." text in the header */
+.floatLeft {
+    float: left;
+    text-decoration: none;
+}
+
+.leftSidebar li {
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pageContentContainer {
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding-left: 10px;
+
+}
+
+.pageContentContainer span {
+    font-size: 200%;
+    position: absolute;
+    
+}
+
+.pageContentContainer p {
+    margin-left: 160px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: #88B2A0;
+    padding-left: 10px;
+    font-size: 105%;
+}
+
+.pageContentContainer ul {
+    margin-left: 160px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: #88B2A0;
+    padding-left: 10px;
+    font-size: 105%;
+
+}
+
+.pageContentContainer ul li {
+    display: inline;
+    justify-content: center;
+}
+
+
+.workImage {
+    margin: 10px 10px auto;
+    max-height: 225px;
+    border-style: solid;
+    border-width: 3px;
+}
