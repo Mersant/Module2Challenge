@@ -12,6 +12,12 @@
     left: 10px;
 }
 
+/* Remove default hyperlink styling from "David Lowry" text in the header. */
+.davidLowry a {
+    color: inherit; 
+    text-decoration: inherit; 
+}
+
 header {
     background-color: var(--light-blue);
     font-size: 150%;
@@ -23,6 +29,11 @@ header li {
     float: right;
     margin: 20px;
     text-decoration: underline;
+}
+
+header li a {
+    color: inherit; 
+    text-decoration: inherit; 
 }
 
 /* This is the "Genuis." text in the header */
@@ -51,22 +62,25 @@ header li {
     font-size: 200%;
     position: absolute;
     
+    
 }
 
 .pageContentContainer p {
     margin-left: 160px;
+    margin-right: 120px;
     border-left-style: solid;
     border-left-width: 10px;
-    border-left-color: #88B2A0;
+    border-left-color: var(--light-blue);
     padding-left: 10px;
-    font-size: 105%;
+    font-size: 110%;
+    
 }
 
 .pageContentContainer ul {
     margin-left: 160px;
     border-left-style: solid;
     border-left-width: 10px;
-    border-left-color: #88B2A0;
+    border-left-color: var(--light-blue);
     padding-left: 10px;
     font-size: 105%;
 
@@ -81,6 +95,54 @@ header li {
 .workImage {
     margin: 10px 10px auto;
     max-height: 225px;
-    border-style: solid;
+    border-style: outset;
     border-width: 3px;
+    border-color: var(--gray-blue);
+}
+
+.imageTitle {
+    color: white;
+    width: 150px;
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.horiseonImage {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    max-height: 465px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: var(--gray-blue);
+}
+
+/* This CSS code section applies to pages other than index.html */
+
+.subPageImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 20%;
+    border-style: outset;
+    border-width: 10px;
+    border-color: var(--gray-blue);
+}
+
+.subPageContent {
+    text-align: center;
+    font-size: 110%;
+}
+
+.code {
+    font-size: 115%;
+    color: #748688;
+    text-align: left;
+    margin-left: 600px;
+}
+
+h1 {
+    font-size: 150%;
+    font-weight: 600;
 }

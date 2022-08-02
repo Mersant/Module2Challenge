@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>David Lowry's Portfolio</title>
+    <a href="./index.html"><title>David Lowry's Portfolio</title></a>
 </head>
 <body>
     
     <header>
-        <span class="davidLowry">David Lowry</span>
+        <span class="davidLowry"><a href="./index.html">David Lowry</a></span>
 
         <ul>
-            <li>About Me</li>
-            <li>Work</li>
-            <li>Contact Me</li>
-            <li>Resume</li>
+            <li><a href="./index.html#resume">Resume</a></li>
+            <li><a href="./index.html#contactMe">Contact Me</a></li>
+            <li><a href="./index.html#work">Work</a></li>
+            <li><a href="./index.html#aboutMe">About Me</a></li>
+            
             <li class="floatLeft">Genuis.</li>
         </ul>
 
@@ -25,41 +26,84 @@
     </header>
 
     
-    <div class="pageContentContainer">
+    <div id="aboutMe" class="pageContentContainer">
         <span>About Me</span>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos corrupti provident, omnis blanditiis quod sit voluptates accusantium sed 
-            beatae recusandae necessitatibus autem cum ipsam veniam doloribus animi consectetur nulla aut?
+            Hello! My name is David Lowry. I have been working with computers for almost a decade. I started at the age of 10 years old with
+            Python 3. After trying (And failing) to program computer games using Python, I moved on to learning as many programming languages
+            I could. This resulted in me having familiarity with C, C#, C++, JavaScript, HTML, CSS, Z80 Assembly Language, x86 Assembly Language,
+            Verilog, Java and BASIC. (Mainly Sinclair BASIC) <br><br>
+
+            While I only retained a few of these, I continued to follow my passion of working
+            with computers as time went on. I went to OSU for a while to pursue a Bachelor's in Electrical Engineering, however, after a year
+            I switched my major to Software Engineering and here I am today! I will continue to pursue my Bachelor's degree on a part time basis
+            once I am employed, and look forward to sharing my works with you through this page.
         </p>
     </div>
 
-    <div class="pageContentContainer">
+    <div id="work" class="pageContentContainer">
         <span>Work</span>
         <ul>
-            <li><img class="workImage" src="./assets/images/AltoidsComputer.jpg"></li>
-            <li><img class="workImage" src="./assets/images/PocketComputer.jpg"></li>
+            <li>
+                <a href="./Altoids.html">
+                <span class="imageTitle">Altoids Computer</span>
+                <img class="workImage" src="./assets/images/AltoidsComputer.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="./Pocket.html">
+                <span class="imageTitle">SHARP Pocket PC</span>
+                <img class="workImage" src="./assets/images/PocketComputer.jpg">
+                </a>
+            </li>
+
+            <a href="https://github.com/Mersant/Module1Challenge" target="_blank" rel="noopener noreferrer">
+            <img class="horiseonImage" src="./assets/images/Module1Challenge.PNG">
+            </a>
+
         </ul>
+        
         <ul>
-            <li><img class="workImage" src="./assets/images/Z80MBC.jpg"></li>
-            <li><img class="workImage" src="./assets/images/ZilogZ80.jpg"></li>
+            <li>
+                <a href="./Z80MBC.html">
+                <span class="imageTitle">Z80 MBC2</span>
+                <img class="workImage" src="./assets/images/Z80MBC.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="./Z80Asm.html">
+                <span class="imageTitle">Z80 Assembly</span>
+                <img class="workImage" src="./assets/images/ZilogZ80.jpg">
+                </a>
+            </li>
+
         </ul>
+        
+        
+        
+
     </div>
 
-    <div class="pageContentContainer">
+    <div id="contactMe" class="pageContentContainer">
         <span>Contact Me</span>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos corrupti provident, omnis blanditiis quod sit voluptates accusantium sed 
-            beatae recusandae necessitatibus autem cum ipsam veniam doloribus animi consectetur nulla aut?
+            Info: <br>
+            Address: 166 Main St, Orelton, Statesoda <br>
+            Phone: 123-000-0000 Ext. 10x10^(37) (This may take some time to type in, but be patient and I will be sure to return your call.) <br><br>
+            Fax: Simply input Avagadro's number. (It is ~6.022x10^(23) if you forgot. Again, be patient and ensure you don't miss any digits.)
+            <br><br>
+            I do not have any social media accounts, so my apologies but you will not be able to connect with me through those means.
         </p>
     </div>
 
-    <div class="pageContentContainer">
+    <div id="resume" class="pageContentContainer">
         <span>Resume</span>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos corrupti provident, omnis blanditiis quod sit voluptates accusantium sed 
-            beatae recusandae necessitatibus autem cum ipsam veniam doloribus animi consectetur nulla aut?
+            Download my resume:<br>
+            <a href="./assets/files/Resume.docx" download>Attached here.</a><br>
         </p>
     </div>
+    <br><br><br><br>
 
 
 </body>
