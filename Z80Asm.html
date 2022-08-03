@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <a href="./index.html"><title>David Lowry's Portfolio</title></a>
+    <title>The Z80 Assembly Language</title>
 </head>
 <body>
     
@@ -19,7 +19,7 @@
             <li><a href="./index.html#work">Work</a></li>
             <li><a href="./index.html#aboutMe">About Me</a></li>
             
-            <li class="floatLeft">Genuis.</li>
+            <li class="floatLeft">Genius.</li>
         </ul>
 
     </header>
@@ -28,10 +28,10 @@
     </a>
     <div class="subPageContent">
         <h1>Z80 Assembly Language</h1><br<br><br>
-        Z80 Assembly Language is the computing language I am the most experience in, and is the only one I would really say <br>
+        Z80 Assembly Language is the computing language I am the most experienced in, and is the only one I would really say <br>
         I am "fluent" in. It's a very simple language, but that simplicity makes it quite difficult to get anything useful done. <br>
         
-        Here's an example program I made to convert a number stored in memory to an ASCII string: <br><br>
+        Here's an example program I made to convert the number stored in the HL register to an ASCII string: <br><br>
         
         <div class="code">
 
@@ -46,7 +46,12 @@
             9440D1: DJNZ D0<br>
             9445 RET <br>
             9449; CONV HL TO ASCII <br>
-            9450ASCII: LD DE,NUM+3 ; NUM IS THE ADDR. OF THE # WE WISH TO CONVERT TO ASCII <br>
+            9450ASCII: LD DE,NUM+3  ; NUM is the address where we want to store the ASCII string<br><br>
+                                    ; The Z80 stores the data with the least significant byte first, <br>
+                                    ; the opposite of how our decimal number system works. Because of <br>
+                                    ; this, you have to put the larger part of the number at the end of <br>
+                                    ; the address space alloted for this function to return to. Hence, NUM+3<br>
+                                    ; being used instead of just NUM.<br><br>
             9455 LD C,10 <br>
             9460AS0: CALL HLDIVC <br>
             9470 LD (DE),A <br>
@@ -61,5 +66,6 @@
         And there you go! 
 
         <br><br><br><br>
+        (Click the image to open up in fullscreen)<br><br>
     </div>
 </body>

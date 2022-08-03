@@ -117,6 +117,13 @@ header li a {
     border-color: var(--gray-blue);
 }
 
+.horiseonTitle {
+    color: white;
+    text-decoration: none;
+    margin-top: 400px;
+    margin-left: 20px;
+}
+
 /* This CSS code section applies to pages other than index.html */
 
 .subPageImage {
