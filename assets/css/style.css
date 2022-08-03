@@ -127,11 +127,7 @@ header li a {
 /* This CSS code section applies to pages other than index.html */
 
 .subPageImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 20%;
+    width: 100%;
     border-style: outset;
     border-width: 10px;
     border-color: var(--gray-blue);
@@ -140,6 +136,15 @@ header li a {
 .subPageContent {
     text-align: center;
     font-size: 110%;
+}
+
+.subPageImageContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: block;
+    width: 20%;
 }
 
 .code {
@@ -152,4 +157,14 @@ header li a {
 h1 {
     font-size: 150%;
     font-weight: 600;
+}
+
+img:hover {
+    opacity: .7;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: .5;
+    transition: 0.3s;
 }
