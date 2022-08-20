@@ -107,7 +107,7 @@ header li a {
     margin-left: 20px;
 }
 
-.horiseonImage {
+.teamProjectOneImage {
     position: absolute;
     margin-left: 10px;
     margin-top: 10px;
@@ -117,8 +117,10 @@ header li a {
     border-color: var(--gray-blue);
 }
 
-.horiseonTitle {
-    color: white;
+.teamProjectOneTitle {
+    color: #112441;
+    background-color: #88B2A0;
+    font-weight: 800;
     text-decoration: none;
     margin-top: 400px;
     margin-left: 20px;
